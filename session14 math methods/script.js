@@ -1,0 +1,11 @@
+let num = 10.4;
+console.log(Math.pow(num , 2));
+console.log(Math.sqrt(num));
+console.log(Math.abs(num));
+console.log(Math.min(10 , 20 , 30));
+console.log(Math.max(10 , 20 , 30));
+console.log(Math.floor(num));
+console.log(Math.round(num));
+console.log(Math.ceil(num));
+console.log(Math.random());
+console.log(Math.floor(Math.random() * 100));
