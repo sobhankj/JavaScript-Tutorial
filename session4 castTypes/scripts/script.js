@@ -1,5 +1,6 @@
 let numStr = '10';
 let numNum = Number(numStr);
+// let numNum = +numStr;
 console.log("numStr is " + typeof numStr);
 console.log("numNum is " + typeof numNum);
 
