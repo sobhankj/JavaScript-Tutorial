@@ -25,3 +25,19 @@ users.every(user => user.age >= 18);
 users.every(function(user) {
     return user.age >= 18;
 })
+
+users.find(user => {
+    return user.firstName === 'sobhan';
+});
+
+users.find(function(user) {
+    return user.firstName === 'sobhan';
+});
+
+users.findIndex(user => {
+    return user.firstName === 'sobhan';
+});
+
+users.findIndex(function(user) {
+    return user.firstName === 'sobhan';
+});
