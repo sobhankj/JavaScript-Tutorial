@@ -49,3 +49,13 @@ let filteredUsers = users.filter(user => {
 let filteredUsers2 = users.filter(function(user) {
     return user.age > 19;
 });
+
+let mappedUsers = users.map(user => {
+    user.age += 2;
+    return user;
+});
+
+let mappedUsers2 = users.map(function(user) {
+    user.age += 2;
+    return user;
+});
