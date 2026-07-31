@@ -12,32 +12,40 @@ users.forEach(function(user) {
     console.log(user);
 })
 
-users.some(user => {
+let isAvailable = users.some(user => {
     return user.firstName === 'sobhan';
 })
 
-users.some(function(user) {
+let isAvailable2 = users.some(function(user) {
     return user.firstName === 'sobhan';
 })
 
-users.every(user => user.age >= 18);
+let isAvailableInAll = users.every(user => user.age >= 18);
 
-users.every(function(user) {
+let isAvailableInAll2 = users.every(function(user) {
     return user.age >= 18;
 })
 
-users.find(user => {
+let findedUser = users.find(user => {
     return user.firstName === 'sobhan';
 });
 
-users.find(function(user) {
+let findedUser2 = users.find(function(user) {
     return user.firstName === 'sobhan';
 });
 
-users.findIndex(user => {
+let findedUserIndex = users.findIndex(user => {
     return user.firstName === 'sobhan';
 });
 
-users.findIndex(function(user) {
+let findedUserIndex2 = users.findIndex(function(user) {
     return user.firstName === 'sobhan';
+});
+
+let filteredUsers = users.filter(user => {
+    return user.age > 19;
+});
+
+let filteredUsers2 = users.filter(function(user) {
+    return user.age > 19;
 });
